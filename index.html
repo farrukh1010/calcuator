@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>calcualtor</title>
+    
+</head>
+    
+
+<body>
+         <form class="main">
+    <div class="longText">
+        
+            <input type="text"  id="result" class="result shadow">
+        </div>
+        
+                 <div>                
+                <input class="button shadowOuter" type="button" value="c" onclick="clearResult()" style="background: red;">
+                 <input class="button shadowOuter" type="button" value="<" onclick="back()">
+                <input class="button shadowOuter" type="button" value="/"onclick="getNumber('/')">
+                <input class="button shadowOuter" type="button" value="*"onclick="getNumber('*')">                       
+            </div>
+            <div> 
+                <input class="button shadowOuter" type="button" value="7" onclick="getNumber('7')">
+                <input class="button shadowOuter" type="button" value="8" onclick="getNumber('8')">
+                <input class="button shadowOuter" type="button" value="9" onclick="getNumber('9')">
+                <input class="button shadowOuter" type="button" value="-" onclick="getNumber('-')">                      
+            </div>
+            <div> 
+                <input class="button shadowOuter" type="button" value="4" onclick="getNumber('4')">
+                <input class="button shadowOuter" type="button" value="5" onclick="getNumber('5')">
+                <input class="button shadowOuter" type="button" value="6" onclick="getNumber('6')">
+                <input class="button shadowOuter" type="button" value="+" onclick="getNumber('+')">                       
+            </div>
+            <div> 
+                  <input class="button shadowOuter " type="button" value="1" onclick="getNumber('1')" >
+                 <input class="button shadowOuter" type="button" value="2" onclick="getNumber('2')">
+                <input class="button shadowOuter" type="button" value="3" onclick="getNumber('3')">
+                 <input class="button shadowOuter" style="height:105px;" type="button" value="=" onclick="getResult()" id="equal">                       
+                </div>
+                <div> 
+                <input class="button shadowOuter endButton " style="width: 100px;" type="button" value="0" onclick="getNumber('0')">
+                <input class="button shadowOuter endButton" type="button" value="." onclick="getNumber('.')">
+            </div>
+  
+</form> 
+
+</body>
+   <script src="app.js"></script>
+</html>
